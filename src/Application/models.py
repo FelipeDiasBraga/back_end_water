@@ -5,6 +5,7 @@ from datetime import datetime
 from extensions import db
 
 
+
 class Produtor(db.Model):
     __tablename__ = "produtor"
 
