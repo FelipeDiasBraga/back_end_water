@@ -1,2 +1,49 @@
-.venv_back
+# ========================
+# ESSENCIAL - PYTHON/FLASK
+# ========================
+
+# Variáveis de ambiente
 .env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual Environment
+.venv_back
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e Cache
+*.log
+.cache/
+
+# Banco de dados local
+*.db
+*.sqlite3
+
+# Dependências Python
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+migrations/  # Mantenha apenas se não usar Flask-Migrate
