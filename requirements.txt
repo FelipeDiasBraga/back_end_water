@@ -1,0 +1,11 @@
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.7
+Flask-JWT-Extended==4.6.0
+python-dotenv==1.0.1
+pydantic==2.9.2
+email-validator
+psycopg2-binary==2.9.9
+geoalchemy2==0.14.5
+shapely==2.0.6
+gunicorn==23.0.0
