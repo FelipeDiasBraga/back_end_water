@@ -1,5 +1,4 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
 from geoalchemy2 import Geometry
 from werkzeug.security import generate_password_hash, check_password_hash
 from extensions import db 

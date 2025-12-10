@@ -3,7 +3,7 @@ from flask import Blueprint, request, jsonify
 from Application.models import EstacaoMeteorologica, DadoChuva, db
 from datetime import datetime
 
-chuva_bp = Blueprint('chuva', __name__, url_prefix='/api/chuva')
+chuva_bp = Blueprint('chuva', __name__, url_prefix='/v.0/chuva')
 
 # Rota pública — a estação física chama com UUID no header
 @chuva_bp.route('/ingest', methods=['POST'])

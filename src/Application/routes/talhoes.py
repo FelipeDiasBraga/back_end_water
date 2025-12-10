@@ -3,7 +3,7 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from Application.models import Talhao, Fazenda, db
 
 
-talhoes_bp = Blueprint('talhoes', __name__, url_prefix='/api/talhoes')
+talhoes_bp = Blueprint('talhoes', __name__, url_prefix='/v.0/talhoes')
 
 
 @talhoes_bp.route('/fazenda/<int:fazenda_id>', methods=['POST'])

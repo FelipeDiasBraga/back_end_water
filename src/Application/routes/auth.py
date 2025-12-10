@@ -1,11 +1,11 @@
-# app/routes/auth.py
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from Application.models import Produtor, db
 from Application.schemas.auth import RegisterSchema, LoginSchema, TokenResponse
 from datetime import timedelta
 
-auth_bp = Blueprint('auth', __name__, url_prefix='/api/auth')
+
+auth_bp = Blueprint('auth', __name__, url_prefix='/v.0/auth')
 
 
 @auth_bp.route('/register', methods=['POST'])

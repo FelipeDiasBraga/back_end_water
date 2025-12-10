@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from Application.models import Fazenda, db
 
-fazendas_bp = Blueprint('fazendas', __name__, url_prefix='/api/fazendas')
+fazendas_bp = Blueprint('fazendas', __name__, url_prefix='/v.0/fazendas')
 
 @fazendas_bp.route('', methods=['POST'])
 @jwt_required()

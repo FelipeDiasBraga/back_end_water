@@ -4,7 +4,7 @@ from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from Application.models import EstacaoMeteorologica, Fazenda, db
 
-estacoes_bp = Blueprint('estacoes', __name__, url_prefix='/api/estacoes')
+estacoes_bp = Blueprint('estacoes', __name__, url_prefix='/v.0/estacoes')
 
 @estacoes_bp.route('/fazenda/<int:fazenda_id>', methods=['POST'])
 @jwt_required()
